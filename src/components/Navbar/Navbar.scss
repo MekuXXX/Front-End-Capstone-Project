@@ -1,0 +1,23 @@
+$mainYellow: #f4ce14;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  .links {
+    display: flex;
+    .link {
+      list-style: none;
+      a {
+        padding: 0.5rem 0.75rem;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        transition: 0.3 s ease;
+        &:hover {
+          color: $mainYellow;
+        }
+      }
+    }
+  }
+}

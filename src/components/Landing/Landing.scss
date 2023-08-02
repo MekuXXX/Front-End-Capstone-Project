@@ -1,0 +1,63 @@
+$backColor: #495e57;
+$mainYellow: #f4ce14;
+.land {
+  padding: 2rem 5rem;
+  background-color: $backColor;
+  color: white;
+  position: relative;
+  h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 0;
+    color: $mainYellow;
+  }
+  h3 {
+    margin: 0.5rem 0;
+    font: {
+      style: italic;
+      size: 2rem;
+      weight: 400;
+    }
+  }
+  p {
+    max-width: 40rem;
+    line-height: 1.5;
+    letter-spacing: 0.125rem;
+  }
+  button {
+    background-color: $mainYellow;
+    display: block;
+    margin: 2rem 0 0;
+    border: none;
+    color: inherit;
+    font-size: 1.125rem;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border-radius: 0.625rem;
+    text-transform: capitalize;
+    font-style: italic;
+    transition: 0.4s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  div {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: absolute;
+    right: 5rem;
+    bottom: -10%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 1150px) {
+    div {
+      display: none;
+    }
+  }
+}

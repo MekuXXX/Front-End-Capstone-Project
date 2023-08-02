@@ -1,0 +1,13 @@
+$backColor: #495e57;
+$mainYellow: #f4ce14;
+
+footer {
+  background-color: $backColor;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  span {
+    font-weight: bold;
+    color: $mainYellow;
+  }
+}
