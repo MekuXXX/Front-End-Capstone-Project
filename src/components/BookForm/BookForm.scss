@@ -1,0 +1,81 @@
+$backColor: #495e57;
+$mainYellow: #f4ce14;
+@mixin button {
+  background-color: $mainYellow;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.625rem;
+  text-transform: capitalize;
+  font-style: italic;
+  transition: 0.4s ease;
+  font-weight: 700;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.book {
+  padding: 2rem 5rem;
+  position: relative;
+  background-color: #eeee;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  form {
+    .form-labels {
+      label {
+        display: block;
+        padding: 1rem 0 0.5rem;
+        font-weight: 700;
+      }
+      input {
+        width: 20rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+        caret-color: $mainYellow;
+        outline: none;
+        border: none;
+        transition: 0.4s ease;
+        border-radius: 0.5rem;
+        padding: 0.25rem 0.75rem;
+        &:focus {
+          border: 1px solid $backColor;
+        }
+      }
+      p {
+        color: rgb(red, 0.7);
+        font-size: 0.75rem;
+        margin: 0.25rem 0 0;
+      }
+    }
+    .buttons {
+      margin: 1rem 0;
+      display: flex;
+      gap: 0.5rem;
+      button {
+        display: inline-block;
+        @include button();
+        &:disabled {
+          background-color: rgb($mainYellow, 0.4);
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+    }
+    form {
+      label {
+        text-align: left;
+      }
+      .form-labels {
+        text-align: left;
+      }
+    }
+  }
+}

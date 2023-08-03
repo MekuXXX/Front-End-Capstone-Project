@@ -6,7 +6,7 @@ import './Specials.scss';
 type Props = {};
 export default function Specials({}: Props) {
   return (
-    <section className='specials'>
+    <section className='specials' data-testid='specials'>
       <div className='heading'>
         <h2>This weeks specials!</h2>
         <button>Online Menu</button>

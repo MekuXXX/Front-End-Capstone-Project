@@ -4,7 +4,7 @@ import './Landing.scss';
 type Props = {};
 export default function Landing({}: Props) {
   return (
-    <main className='land'>
+    <main className='land' data-testid='landing'>
       <h1>Little Lemon</h1>
       <h3>Chicago</h3>
       <p>

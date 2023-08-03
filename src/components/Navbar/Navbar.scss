@@ -1,5 +1,6 @@
 $mainYellow: #f4ce14;
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +18,46 @@ $mainYellow: #f4ce14;
         &:hover {
           color: $mainYellow;
         }
+      }
+    }
+  }
+  .menu {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    & {
+      padding: 0.5rem 2rem;
+    }
+    .links {
+      display: none;
+      z-index: 99;
+      position: absolute;
+      width: 100%;
+      top: 73%;
+      left: 0;
+      padding-left: 0;
+      &.active {
+        display: block;
+      }
+      .link {
+        a {
+          display: block;
+          width: 100%;
+          background-color: white;
+          padding: 1rem;
+        }
+      }
+    }
+    .menu {
+      display: block;
+      display: flex;
+      flex-flow: column;
+      gap: 0.25rem;
+      span {
+        height: 0.125rem;
+        width: 1rem;
+        background-color: black;
+        border-radius: 0.125rem;
       }
     }
   }

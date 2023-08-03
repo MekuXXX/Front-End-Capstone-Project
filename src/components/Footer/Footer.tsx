@@ -4,7 +4,7 @@ type Props = {};
 export default function Footer({}: Props) {
   const currentYear = new Date().getFullYear();
   return (
-    <footer>
+    <footer data-testid='footer'>
       @Copyright{currentYear} maded by <span>Mohamed</span>{' '}
     </footer>
   );
